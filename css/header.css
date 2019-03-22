@@ -1,0 +1,23 @@
+.navbar-nav > li > a {
+    font: 1em Arial, sans-serif;
+    display: inline-block;
+    width: 200px;
+    text-align: center;
+    text-decoration: none;
+    color: #0051A1 !important;
+    
+    /* Set up the hover */
+    /* If you aren't using autoprefix, remember to prefix the gradient for other browsers */
+    background-image: linear-gradient(#0051A1, #0051A1), linear-gradient(#F8F8F8, #F8F8F8) !important;
+    background-size: 0 5px, auto;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    transition: all .2s ease-out;
+  }
+  
+  .navbar-nav > li > a:hover {
+    /* The following line makes the underline only as wide as the text */
+    /* background-size: calc(100% - 2em) 5px, auto; */
+    background-size: 100% 5px, auto;
+    color: #003569 !important;
+  }

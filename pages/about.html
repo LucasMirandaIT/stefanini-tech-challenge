@@ -1,0 +1,41 @@
+<div ng-controller="fipeCtrl">
+    <select name="marcaSelect" ng-model="marcaSelecionada" ng-change="getModelos()">
+        <option value="{{marca.id}}" ng-repeat="marca in marcas | orderBy: 'fipe_name'">{{marca.fipe_name}}</option>
+    </select><br>
+    <select name="modeloSelect" ng-model="modeloSelecionado" ng-change="getVersoes()">
+        <option value="{{modelo.id}}" ng-repeat="modelo in modelos | orderBy: 'fipe_name'">{{modelo.fipe_name}}</option>
+    </select><br>
+    <select name="versaoSelect" ng-model="versaoSelecionada" ng-change="getInformacoesVersao()">
+        <option value="{{versao.id}}" ng-repeat="versao in versoes | orderBy: 'name'">{{versao.name}}</option>
+    </select><br>
+
+    <p>{{marcaSelecionada}}</p>
+    <p>{{modeloSelecionado}}</p>
+    <p>{{versaoSelecionada}}</p>
+
+    <br>
+    <br>
+    <br>
+    <table>
+        <thead>
+            <td>Referência</td>
+            <td>Código FIPE</td>
+            <td>Combustível</td>
+            <td>Marca</td>
+            <td>Modelo</td>
+            <td>Ano Modelo</td>
+            <td>Preço</td>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{infosVersaoSelecionada.referencia}}</td>
+                <td>{{infosVersaoSelecionada.fipe_codigo}}</td>
+                <td>{{infosVersaoSelecionada.combustivel}}</td>
+                <td>{{infosVersaoSelecionada.marca}}</td>
+                <td>{{infosVersaoSelecionada.veiculo}}</td>
+                <td>{{infosVersaoSelecionada.ano_modelo}}</td>
+                <td>{{infosVersaoSelecionada.preco}}</td>
+            </tr>
+        </tbody>
+    </table>
+</div>

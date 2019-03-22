@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="siteTrust">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:300,400,600" rel="stylesheet">
+  <link rel="stylesheet" href="css/header.css" />
+  <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="css/app.css" />
+  <title>TrustPay</title>
+</head>
+
+<body style="padding-top: 70px;">
+  <div ng-include="'templates/header.html'" class="ng-scope"></div>
+
+  <ng:view></ng:view>
+
+  <div ng-include="'templates/footer.html'" class="ng-scope footer"></div>
+
+  <script src="lib/angular/angular.js"></script>
+  <script src="lib/angular/angular-route.js"></script>
+  <script src="lib/angular/angular-loader.js"></script>
+  <script src="lib\bootstrap\js\bootstrap.min.js"></script>
+
+  <script src="js/vendors/jquery/dist/jquery.min.js"></script>
+  <script src="js/vendors/jquery.mousewheel.js"></script>
+  <script src="js/vendors/jquery.mask.min.js"></script>
+  <script src="js/vendors/slick.min.js"></script>
+  <script src="js/vendors/bootstrap/bootstrap.min.js"></script>
+  <script src="js/vendors/angular/angular.min.js"></script>
+  <script src="js/vendors/angular/angular-messages.min.js"></script>
+  <script src="js/vendors/angular/ngMask.min.js"></script>
+  <script src="js/vendors/angular/angular-input-masks-standalone.min.js"></script>
+  <script src="js/vendors/angular/angular-locale_pt-br.js"></script>
+  <script src="js/vendors/angular/angular-storage.min.js"></script>
+
+
+  <script src="js/app-site.js"></script>
+  <script src="js/constants.js"></script>
+
+  <script src="js/services/app.service.js"></script>
+  <script src="js/services/fipe.service.js"></script>
+  <script src="js/controllers/app.controller.js"></script>
+  <script src="js/controllers/fipe.controller.js"></script>
+</body>
+
+</html>

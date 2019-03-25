@@ -1,6 +1,14 @@
 .footer {
     position: absolute;
     bottom: 0;
+    height: 4.1em;
+    width: 100%;
+}
+
+.footer > p {
+    line-height: 3.4em;
+    text-align: center;
+    color: #cad400;
 }
 
 .page-title {
@@ -26,18 +34,32 @@
     margin-top: 17px;
 }
 
+.articles {
+    display: flex;
+}
+
 .blog-article {
-    width: calc(100% - 20px);
-    height: 100px;
+    width: calc(33% - 20px);
+    height: 200px;
     border-radius: 20px;
     display: table;    
     margin: 10px;
-    background-color: gray;
+    padding: 20px;
+    background-color: #003569;
+    color: #cad400;
+    transition: transform .2s; /* Animation */
 }
+
+.blog-article:hover {
+    color: #003569;
+    background-color: #cad400;
+    transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
 .blog-article > p {
     display: table-cell;
     vertical-align: middle;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .fipe-table {

@@ -14,7 +14,10 @@ app.config(['$routeProvider', function($routeProvider) {
 		templateUrl: 'pages/home.html'
 	}).
 	when('/consulta', {
-		templateUrl: 'pages/about.html'
+		templateUrl: 'pages/fipe.html'
+	}).
+	when('/curriculo', {
+		templateUrl: 'pages/cv.html'
 	})
 	.otherwise({
 		redirectTo: '/home'

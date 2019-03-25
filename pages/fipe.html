@@ -1,0 +1,47 @@
+<h3 class="page-title">Consulta de Valores FIPE</h3>
+<div ng-controller="fipeCtrl">
+    <div class=fipe-selects>
+        <div class="atributo marca active">
+            <label class="control-label" for="marcaSelect">Marcas</label>
+            <select name="marcaSelect" class="form-control custom-fipe-select" ng-model="marcaSelecionada" ng-click="marcaClique($event)" ng-change="getModelos()">
+                <option value="{{marca.id}}" ng-repeat="marca in marcas | orderBy: 'fipe_name'">{{marca.fipe_name}}</option>
+            </select><br>
+        </div>
+        <div class="atributo modelo" ng-class="{'active' : marcaSelecionada}">
+            <label class="control-label" for="modeloSelect">Modelos</label>
+            <select name="modeloSelect" class="form-control custom-fipe-select" ng-model="modeloSelecionado" ng-change="getVersoes()">
+                <option value="{{modelo.id}}" ng-repeat="modelo in modelos | orderBy: 'fipe_name'">{{modelo.fipe_name}}</option>
+            </select><br>
+        </div>
+        <div class="atributo versao" ng-class="{'active' : modeloSelecionado}">
+            <label class="control-label" for="versaoSelect">Versões</label>
+            <select name="versaoSelect" class="form-control custom-fipe-select" ng-model="versaoSelecionada" ng-change="getInformacoesVersao()">
+                <option value="{{versao.id}}" ng-repeat="versao in versoes | orderBy: 'name'">{{versao.name}}</option>
+            </select><br>
+        </div>
+    </div>
+    <br>
+    <table class="table fipe-table" ng-class="{'active' : infosVersaoSelecionada}">
+        <thead>
+            <td>Referência</td>
+            <td>Código FIPE</td>
+            <td>Combustível</td>
+            <td>Marca</td>
+            <td>Modelo</td>
+            <td>Ano Modelo</td>
+            <td>Preço</td>
+        </thead>
+        <tbody>
+            <tr>
+                <td>{{infosVersaoSelecionada.referencia}}</td>
+                <td>{{infosVersaoSelecionada.fipe_codigo}}</td>
+                <td>{{infosVersaoSelecionada.combustivel}}</td>
+                <td>{{infosVersaoSelecionada.marca}}</td>
+                <td>{{infosVersaoSelecionada.veiculo}}</td>
+                <td>{{infosVersaoSelecionada.ano_modelo}}</td>
+                <td>{{infosVersaoSelecionada.preco}}</td>
+            </tr>
+        </tbody>
+    </table>
+    <p class="loading-text" ng-if="loading">Carregando Dados ... Por favor Aguarde ...</p>
+</div>

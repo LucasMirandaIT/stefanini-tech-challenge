@@ -4,19 +4,19 @@
         <div class="atributo marca active">
             <label class="control-label" for="marcaSelect">Marcas</label>
             <select name="marcaSelect" class="form-control custom-fipe-select" ng-model="marcaSelecionada" ng-click="marcaClique($event)" ng-change="getModelos()">
-                <option value="{{marca.id}}" ng-repeat="marca in marcas | orderBy: 'fipe_name'">{{marca.fipe_name}}</option>
+                <option value="{{marca.codigo}}" ng-repeat="marca in marcas | orderBy: 'nome'">{{marca.nome}}</option>
             </select><br>
         </div>
         <div class="atributo modelo" ng-class="{'active' : marcaSelecionada}">
             <label class="control-label" for="modeloSelect">Modelos</label>
             <select name="modeloSelect" class="form-control custom-fipe-select" ng-model="modeloSelecionado" ng-change="getVersoes()">
-                <option value="{{modelo.id}}" ng-repeat="modelo in modelos | orderBy: 'fipe_name'">{{modelo.fipe_name}}</option>
+                <option value="{{modelo.codigo}}" ng-repeat="modelo in modelos | orderBy: 'nome'">{{modelo.nome}}</option>
             </select><br>
         </div>
         <div class="atributo versao" ng-class="{'active' : modeloSelecionado}">
             <label class="control-label" for="versaoSelect">Versões</label>
             <select name="versaoSelect" class="form-control custom-fipe-select" ng-model="versaoSelecionada" ng-change="getInformacoesVersao()">
-                <option value="{{versao.id}}" ng-repeat="versao in versoes | orderBy: 'name'">{{versao.name}}</option>
+                <option value="{{versao.codigo}}" ng-repeat="versao in versoes | orderBy: 'nome'">{{versao.nome}}</option>
             </select><br>
         </div>
     </div>
@@ -33,13 +33,13 @@
         </thead>
         <tbody>
             <tr>
-                <td>{{infosVersaoSelecionada.referencia}}</td>
-                <td>{{infosVersaoSelecionada.fipe_codigo}}</td>
-                <td>{{infosVersaoSelecionada.combustivel}}</td>
-                <td>{{infosVersaoSelecionada.marca}}</td>
-                <td>{{infosVersaoSelecionada.veiculo}}</td>
-                <td>{{infosVersaoSelecionada.ano_modelo}}</td>
-                <td>{{infosVersaoSelecionada.preco}}</td>
+                <td>{{infosVersaoSelecionada.MesReferencia}}</td>
+                <td>{{infosVersaoSelecionada.CodigoFipe}}</td>
+                <td>{{infosVersaoSelecionada.Combustivel}}</td>
+                <td>{{infosVersaoSelecionada.Marca}}</td>
+                <td>{{infosVersaoSelecionada.Modelo}}</td>
+                <td>{{infosVersaoSelecionada.AnoModelo}}</td>
+                <td>{{infosVersaoSelecionada.Valor}}</td>
             </tr>
         </tbody>
     </table>

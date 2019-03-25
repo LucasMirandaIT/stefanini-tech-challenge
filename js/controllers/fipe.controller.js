@@ -1,6 +1,6 @@
 (function () {
   'use strict';
-  angular.module('siteTrust').controller('fipeCtrl', fipeCtrl);
+  angular.module('stefaniniLucasApp').controller('fipeCtrl', fipeCtrl);
 
   fipeCtrl.$inject = [
     '$scope',
@@ -25,12 +25,18 @@
       $scope.loading = true;
       fipeService.getModelos($scope.marcaSelecionada).then(response => {
         $scope.loading = false;
-        $scope.modelos = response;
+        $scope.modelos = response.modelos;
       });
     }
     $scope.getVersoes = function () {
       $scope.loading = true;
       fipeService.getVersoes($scope.marcaSelecionada, $scope.modeloSelecionado).then(response => {
+        response.forEach(versao => {
+          let zeroKM = versao.nome.includes('32000');
+          if (zeroKM) {
+            versao.nome = versao.nome.replace('32000', 'Zero KM');
+          }
+        });
         $scope.loading = false;
         $scope.versoes = response;
       });
@@ -41,8 +47,8 @@
         $scope.loading = false;
         let table = document.getElementsByClassName('fipe-table');
         table[0].classList.add('active');
-        if (response.ano_modelo == 32000) {
-          response.ano_modelo = new Date().getFullYear().toString();
+        if (response.AnoModelo == 32000) {
+          response.AnoModelo = new Date().getFullYear().toString();
         }
         $scope.infosVersaoSelecionada = response;
       });

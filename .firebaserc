@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "stefanini-frontend-test": "stefanini-frontend-test",
+    "default": "stefanini-frontend-test"
+  }
+}

@@ -1,6 +1,6 @@
 (function () {
   'use strict';
-  angular.module('siteTrust').controller('appCtrl', appCtrl);
+  angular.module('stefaniniLucasApp').controller('appCtrl', appCtrl);
 
   appCtrl.$inject = [
 

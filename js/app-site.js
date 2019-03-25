@@ -1,4 +1,4 @@
-var app = angular.module('siteTrust', [ 
+var app = angular.module('stefaniniLucasApp', [ 
     'ngMask', 
     'ngRoute',
     'ui.utils.masks',

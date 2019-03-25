@@ -1,6 +1,6 @@
 (function(){
   'use strict';
-  angular.module('siteTrust').service('appService', appService);
+  angular.module('stefaniniLucasApp').service('appService', appService);
 
   appService.$inject = [
       '$q',

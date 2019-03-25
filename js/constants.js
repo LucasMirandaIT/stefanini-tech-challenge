@@ -2,9 +2,10 @@
     'use strict';
 
     var AppConfig = {
-        hostFipe: 'http://fipeapi.appspot.com/api/1/carros/',
+        hostFipe: 'https://parallelum.com.br/fipe/api/v1/carros/',
+        // hostFipe: 'http://fipeapi.appspot.com/api/1/carros/',
     }
-    angular.module('siteTrust').constant('AppConfig', AppConfig)
+    angular.module('stefaniniLucasApp').constant('AppConfig', AppConfig)
 
 // 
 })()

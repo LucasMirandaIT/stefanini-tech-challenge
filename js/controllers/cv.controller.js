@@ -1,6 +1,6 @@
 (function () {
     'use strict';
-    angular.module('siteTrust').controller('curriculoCtrl', curriculoCtrl);
+    angular.module('stefaniniLucasApp').controller('curriculoCtrl', curriculoCtrl);
 
     curriculoCtrl.$inject = [
         '$scope',

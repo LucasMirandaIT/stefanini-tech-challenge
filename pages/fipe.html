@@ -3,25 +3,25 @@
     <div class=fipe-selects>
         <div class="atributo tipo active">
             <label class="control-label" for="tipoSelect">Tipos</label>
-            <select name="tipoSelect" class="form-control custom-fipe-select" ng-model="tipoSelecionado" ng-click="marcaClique($event)" ng-change="getMarcas()">
+            <select name="tipoSelect" class="form-control custom-fipe-select" ng-model="tipoSelecionado" ng-click="tipoClique($event)" ng-change="getMarcas()">
                 <option value="{{tipo.codigo}}" ng-repeat="tipo in tipos | orderBy: 'nome'">{{tipo.nome}}</option>
             </select><br>
         </div>
         <div class="atributo marca" ng-class="{'active' : tipoSelecionado}">
             <label class="control-label" for="marcaSelect">Marcas</label>
-            <select name="marcaSelect" class="form-control custom-fipe-select" ng-model="marcaSelecionada" ng-click="marcaClique($event)" ng-change="getModelos()">
+            <select name="marcaSelect" class="form-control custom-fipe-select" ng-model="marcaSelecionada" ng-click="atributosClique($event)" ng-change="getModelos()">
                 <option value="{{marca.codigo}}" ng-repeat="marca in marcas | orderBy: 'nome'">{{marca.nome}}</option>
             </select><br>
         </div>
         <div class="atributo modelo" ng-class="{'active' : marcaSelecionada}">
             <label class="control-label" for="modeloSelect">Modelos</label>
-            <select name="modeloSelect" class="form-control custom-fipe-select" ng-model="modeloSelecionado" ng-change="getVersoes()">
+            <select name="modeloSelect" class="form-control custom-fipe-select" ng-model="modeloSelecionado" ng-click="atributosClique($event)" ng-change="getVersoes()">
                 <option value="{{modelo.codigo}}" ng-repeat="modelo in modelos | orderBy: 'nome'">{{modelo.nome}}</option>
             </select><br>
         </div>
         <div class="atributo versao" ng-class="{'active' : modeloSelecionado}">
             <label class="control-label" for="versaoSelect">Versões</label>
-            <select name="versaoSelect" class="form-control custom-fipe-select" ng-model="versaoSelecionada" ng-change="getInformacoesVersao()">
+            <select name="versaoSelect" class="form-control custom-fipe-select" ng-model="versaoSelecionada" ng-click="atributosClique($event)" ng-change="getInformacoesVersao()">
                 <option value="{{versao.codigo}}" ng-repeat="versao in versoes | orderBy: 'nome'">{{versao.nome}}</option>
             </select><br>
         </div>
@@ -49,5 +49,7 @@
             </tr>
         </tbody>
     </table>
-    <p class="loading-text" ng-if="loading">Carregando Dados ... Por favor Aguarde ...</p>
+
+    <div ng-include="'../templates/loading.html'" ng-if="loading" class="ng-scope"></div>
+
 </div>

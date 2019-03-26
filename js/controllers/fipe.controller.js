@@ -77,7 +77,18 @@
       $scope.setTipos();
     }
 
-    $scope.marcaClique = function(evento) {
+    $scope.tipoClique = function(evento) {
+      if(evento.detail == 1) {
+        let table = document.getElementsByClassName('fipe-table');
+        table[0].classList.remove('active');
+
+        $scope.marcaSelecionada = '';
+        $scope.modeloSelecionado = '';
+        $scope.versaoSelecionada = '';
+      }
+    }
+
+    $scope.atributosClique = function(evento) {
       if(evento.detail == 1) {
         let table = document.getElementsByClassName('fipe-table');
         table[0].classList.remove('active');

@@ -89,6 +89,7 @@
     }
 
     $scope.atributosClique = function(evento) {
+      console.log('Evento Clique:', evento);
       if(evento.detail == 1) {
         let table = document.getElementsByClassName('fipe-table');
         table[0].classList.remove('active');

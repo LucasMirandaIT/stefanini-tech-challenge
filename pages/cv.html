@@ -1,6 +1,6 @@
 <div ng-controller="curriculoCtrl">
-    <object ng-show="cvUrl" data="{{cvUrl}}" type="application/pdf" style="width: 100%; height: 40em;">
+    <object ng-show="!loading && cvUrl" data="{{cvUrl}}" type="application/pdf" style="width: 100%; height: 40em;">
         <p>Seu browser não possui suporte para arquivos pdf. Atualize o browser e tente novamente. </p>
     </object>
-    <p class="loading-text" ng-if="loading">Carregando Curriculo ... Por favor Aguarde ...</p>
+    <div ng-include="'../templates/loading.html'" ng-show="loading" class="ng-scope"></div>
 </div>

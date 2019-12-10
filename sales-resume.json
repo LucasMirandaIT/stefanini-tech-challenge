@@ -1,2 +1,400 @@
 {
-}
+    "resume": {
+        "ecName": "KABUM",
+        "yesterdayDate": "07/11/2019",
+        "yesterdayValue": 1.8,
+        "yesterdayValueSuffix": "mil",
+        "monthPeriod": "01/11/2019 à 07/11/2019",
+        "monthValue": 6763,
+        "monthValueSuffix": "",
+        "monthVariation": {
+            "percentage": 12,
+            "type": "POSITIVA",
+            "period": "NOVEMBRO/2018*"
+        }
+    },
+    "averageTicketSalesQtty": {
+        "averageTicket": {
+            "yesterdayValue": 37.36,
+            "monthValue": 36,
+            "monthVariation": {
+                "percentage": 12,
+                "type": "POSITIVA",
+                "period": "NOVEMBRO/2018*"
+            }
+        },
+        "salesQuantity": {
+            "yesterdayValue": 51,
+            "monthValue": 118,
+            "monthVariation": {
+                "percentage": 8,
+                "type": "NEGATIVA",
+                "period": "NOVEMBRO/2018*"
+            }
+        }
+    },
+    "amountPerTransationType": {
+        "yesterdayInfo": {
+            "totals": [{
+                    "transactionType": "Débito",
+                    "value": 0
+                    },
+                {
+                    "transactionType": "Crédito",
+                    "value": 188.7
+                },
+                {
+                    "transactionType": "Crédito Parcelado",
+                    "value": 1239.1
+                }
+            ],
+            "cardBrands": {
+                "elo": [{
+                        "transactionType": "Débito",
+                        "value": 50.2
+                    },
+                    {
+                        "transactionType": "Crédito",
+                        "value": 54.1
+                    },
+                    {
+                        "transactionType": "Parcelado",
+                        "value": 80.9
+                    }
+                ],
+                "visa": [{
+                        "transactionType": "Débito",
+                        "value": 0
+                    },
+                    {
+                        "transactionType": "Crédito",
+                        "value": 0
+                    },
+                    {
+                        "transactionType": "Parcelado",
+                        "value": 0
+                    }
+                ],
+                "master": [{
+                        "transactionType": "Débito",
+                        "value":0
+                    },
+                    {
+                        "transactionType": "Crédito",
+                        "value": 0
+                    },
+                    {
+                        "transactionType": "Parcelado",
+                        "value": 0
+                    }
+                ],
+                "others": [{
+                        "transactionType": "Débito",
+                        "value": 0
+                    },
+                    {
+                        "transactionType": "Crédito",
+                        "value": 0
+                    },
+                    {
+                        "transactionType": "Parcelado",
+                        "value": 0
+                    }
+                ]
+            },
+            "graphData": [{
+                    "percentage": 25,
+                    "value": 1580,
+                    "brand": "elo"
+                },
+                {
+                    "percentage": 0,
+                    "value": 0,
+                    "brand": "visa"
+                },
+                {
+                    "percentage": 0,
+                    "value": 0,
+                    "brand": "master"
+                },
+                {
+                    "percentage": 0,
+                    "value": 0,
+                    "brand": "outros"
+                }
+            ]
+        },
+        "monthInfo": {
+            "totals": [{
+                    "transactionType": "Débito",
+                    "value": 613.5
+                },
+                {
+                    "transactionType": "Crédito",
+                    "value": 1130
+                },
+                {
+                    "transactionType": "Crédito Parcelado",
+                    "value": 5019.3
+                }
+            ],
+            "cardBrands": {
+                "elo": [{
+                        "transactionType": "Débito",
+                        "value": 90.4
+                    },
+                    {
+                        "transactionType": "Crédito",
+                        "value": 200.4
+                    },
+                    {
+                        "transactionType": "Parcelado",
+                        "value": 200.1
+                    }
+                ],
+                "visa": [{
+                        "transactionType": "Débito",
+                        "value": 0
+                    },
+                    {
+                        "transactionType": "Crédito",
+                        "value": 0
+                    },
+                    {
+                        "transactionType": "Parcelado",
+                        "value": 0
+                    }
+                ],
+                "master": [{
+                        "transactionType": "Débito",
+                        "value": 0
+                    },
+                    {
+                        "transactionType": "Crédito",
+                        "value": 0
+                    },
+                    {
+                        "transactionType": "Parcelado",
+                        "value": 0
+                    }
+                ],
+                "others": [{
+                        "transactionType": "Débito",
+                        "value": 20.6
+                    },
+                    {
+                        "transactionType": "Crédito",
+                        "value": 500.2
+                    },
+                    {
+                        "transactionType": "Parcelado",
+                        "value": 61.90
+                    }
+                ]
+            },
+            "graphData": [{
+                    "percentage":0,
+                    "value": 20,
+                    "brand": "elo"
+                },
+                {
+                    "percentage": 0,
+                    "value": 0,
+                    "brand": "visa"
+                },
+                {
+                    "percentage": 0,
+                    "value": 0,
+                    "brand": "master"
+                },
+                {
+                    "percentage": 0,
+                    "value": 1500,
+                    "brand": "outros"
+                }
+            ]
+        }
+    },
+    "salesQuantityPerTransationType": {
+        "yesterdayInfo": {
+            "totals": [{
+                    "transactionType": "Débito",
+                    "value": 10
+                    },
+                {
+                    "transactionType": "Crédito",
+                    "value": 10
+                },
+                {
+                    "transactionType": "Crédito Parcelado",
+                    "value": 10
+                }
+            ],
+            "cardBrands": {
+                "elo": [{
+                        "transactionType": "Débito",
+                        "value": 50
+                    },
+                    {
+                        "transactionType": "Crédito",
+                        "value": 50
+                    },
+                    {
+                        "transactionType": "Parcelado",
+                        "value": 50
+                    }
+                ],
+                "visa": [{
+                        "transactionType": "Débito",
+                        "value": 50
+                    },
+                    {
+                        "transactionType": "Crédito",
+                        "value": 50
+                    },
+                    {
+                        "transactionType": "Parcelado",
+                        "value": 50
+                    }
+                ],
+                "master": [{
+                        "transactionType": "Débito",
+                        "value":50
+                    },
+                    {
+                        "transactionType": "Crédito",
+                        "value": 50
+                    },
+                    {
+                        "transactionType": "Parcelado",
+                        "value": 50
+                    }
+                ],
+                "others": [{
+                        "transactionType": "Débito",
+                        "value": 50
+                    },
+                    {
+                        "transactionType": "Crédito",
+                        "value": 50
+                    },
+                    {
+                        "transactionType": "Parcelado",
+                        "value": 50
+                    }
+                ]
+            },
+            "graphData": [{
+                    "percentage": 25,
+                    "value": 1580,
+                    "brand": "elo"
+                },
+                {
+                    "percentage": 25,
+                    "value": 1580,
+                    "brand": "visa"
+                },
+                {
+                    "percentage": 25,
+                    "value": 1580,
+                    "brand": "master"
+                },
+                {
+                    "percentage": 25,
+                    "value": 1580,
+                    "brand": "outros"
+                }
+            ]
+        },
+        "monthInfo": {
+            "totals": [{
+                    "transactionType": "Débito",
+                    "value": 613
+                },
+                {
+                    "transactionType": "Crédito",
+                    "value": 1130
+                },
+                {
+                    "transactionType": "Crédito Parcelado",
+                    "value": 5019.3
+                }
+            ],
+            "cardBrands": {
+                "elo": [{
+                        "transactionType": "Débito",
+                        "value": 90.4
+                    },
+                    {
+                        "transactionType": "Crédito",
+                        "value": 200.4
+                    },
+                    {
+                        "transactionType": "Parcelado",
+                        "value": 200.1
+                    }
+                ],
+                "visa": [{
+                        "transactionType": "Débito",
+                        "value": 0
+                    },
+                    {
+                        "transactionType": "Crédito",
+                        "value": 0
+                    },
+                    {
+                        "transactionType": "Parcelado",
+                        "value": 0
+                    }
+                ],
+                "master": [{
+                        "transactionType": "Débito",
+                        "value": 0
+                    },
+                    {
+                        "transactionType": "Crédito",
+                        "value": 0
+                    },
+                    {
+                        "transactionType": "Parcelado",
+                        "value": 0
+                    }
+                ],
+                "others": [{
+                        "transactionType": "Débito",
+                        "value": 20.6
+                    },
+                    {
+                        "transactionType": "Crédito",
+                        "value": 500.2
+                    },
+                    {
+                        "transactionType": "Parcelado",
+                        "value": 61.90
+                    }
+                ]
+            },
+            "graphData": [{
+                    "percentage":0,
+                    "value": 20,
+                    "brand": "elo"
+                },
+                {
+                    "percentage": 0,
+                    "value": 0,
+                    "brand": "visa"
+                },
+                {
+                    "percentage": 0,
+                    "value": 0,
+                    "brand": "master"
+                },
+                {
+                    "percentage": 0,
+                    "value": 1500,
+                    "brand": "outros"
+                }
+            ]
+        }
+    }
+} 

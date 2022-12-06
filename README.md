@@ -1,4 +1,4 @@
-# lucas-stefanini (Tech Challenge Project)
+# lucas-stefanini (Tech Challenge Project) - 2019
 
 ## Techs: 
 AngularJS Project
